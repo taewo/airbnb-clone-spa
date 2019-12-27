@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { StyledTitle } from './styles'
 
 const TextInput = (props) => {
   return (
@@ -27,12 +28,6 @@ const StyledTextInput = styled.input`
   width: 100%;
   height: 100%;
   outline: none;
-`
-
-const StyledTitle = styled.div`
-  font-size: 12px;
-  margin-bottom: 8px;
-  font-weight: 800;
 `
 
 export default TextInput
