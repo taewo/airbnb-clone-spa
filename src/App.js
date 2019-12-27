@@ -1,9 +1,11 @@
 import React from 'react';
+import Home from './components/Home'
+import MainContainer from './containers/MainContainer'
 
-function App() {
+const App = () => {
   return (
     <div className="App" >
-      hello world
+      <MainContainer />
     </div>
   );
 }

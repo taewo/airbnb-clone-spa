@@ -1,0 +1,20 @@
+.main {
+  position: relative;
+}
+
+.main_img_dim {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  height: 100%;
+  opacity: 0.2;
+  width: 100%;
+}
+
+.main_img_txt {
+  font-size: 30px;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 30px;
+}
