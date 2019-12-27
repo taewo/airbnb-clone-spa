@@ -1,20 +1,33 @@
 import React from 'react'
 import MainHeader from '../components/MainHeader'
 import MainForm from '../containers/MainForm'
+import MainLookup from './MainLookup'
 import styled from 'styled-components';
 
 const MainContainer = () => {
   return (
     <div>
       <MainHeader />
-      <StyledMainFormWrapper>
+      <StyledMainWrapper>
         <MainForm />
-      </StyledMainFormWrapper>
+        <br></br>
+        <br></br>
+        <MainLookup />
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
+      </StyledMainWrapper>
     </div>
   )
 }
 
-const StyledMainFormWrapper = styled.div`
+const StyledMainWrapper = styled.div`
   padding: 24px;
 `
 

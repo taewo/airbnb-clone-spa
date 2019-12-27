@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components';
-import { StyledTitle } from './styles'
+import { StyledInputTitle } from './styles'
 
 const TextInput = (props) => {
   return (
     <div style={{marginBottom: "16px"}}>
       <label htmlFor={props.title}>
-        <StyledTitle>
+        <StyledInputTitle>
           {props.title}
-        </StyledTitle>
+        </StyledInputTitle>
         <StyledTextInputWrapper className="rounded">
           <StyledTextInput onChange={props.handleInput} placeholder={props.placeholder} id={props.title} />
         </StyledTextInputWrapper>

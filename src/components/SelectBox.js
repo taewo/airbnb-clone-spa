@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import classNames from 'classnames'
-import { StyledTitle } from './styles'
+import { StyledInputTitle } from './styles'
 
 const SelectBox = (props) => {
   const selectBoxClass = classNames(props.className)
@@ -12,9 +12,9 @@ const SelectBox = (props) => {
   })
   return (
     <div style={{marginBottom: "16px"}}>
-      <StyledTitle>
+      <StyledInputTitle>
         {props.title}
-      </StyledTitle>
+      </StyledInputTitle>
       <StyledSelectBoxWrapper className={selectBoxClass}>
         <StyledSelectBox >
           {options}
