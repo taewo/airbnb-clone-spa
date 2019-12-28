@@ -29,11 +29,13 @@ const MainLookup = () => {
       <StyledTitle>
         에어비앤비 둘러보기
       </StyledTitle>
-      <StyledSliderOuter>
-        <StyledSliderInner>
-          {LookupCards}
-        </StyledSliderInner>
-      </StyledSliderOuter>
+      <div style={{height:'200px',marginTop:'15px'}}>
+        <StyledSliderOuter>
+          <StyledSliderInner>
+            {LookupCards}
+          </StyledSliderInner>
+        </StyledSliderOuter>
+      </div>
     </div>
   )
 }
