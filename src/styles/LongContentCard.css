@@ -1,0 +1,15 @@
+.longcontentcard_wrap {
+  padding: 3px;
+  margin-bottom: 15px;
+}
+
+.longcontentcard_img_wrap {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.longcontentcard_subtitle {
+  font-size: 12px;
+  font-weight: 600;
+}
