@@ -19,3 +19,7 @@ export const StyledSubTitle = styled.div`
   color: #484848;
   margin-top: 3px;
 `
+
+export const StyledMainContentWrapper = styled.div`
+  margin: 40px 0 50px 0;
+`

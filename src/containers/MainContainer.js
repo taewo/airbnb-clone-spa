@@ -2,9 +2,12 @@ import React from 'react'
 import MainHeader from '../components/MainHeader'
 import MainForm from '../containers/MainForm'
 import MainLookup from './MainLookup'
-import styled from 'styled-components';
+import MainPlusLodgment from './MainPlusLodgment'
+import MainAdventure from './MainAdventure'
+import styled from 'styled-components'
 
 const MainContainer = () => {
+
   return (
     <div>
       <MainHeader />
@@ -13,6 +16,8 @@ const MainContainer = () => {
         <br></br>
         <br></br>
         <MainLookup />
+        <MainPlusLodgment />
+        <MainAdventure />
         <br></br>
         <br></br>
         <br></br>

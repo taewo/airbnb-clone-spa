@@ -1,0 +1,25 @@
+.wrap {
+  margin-top: 10px;
+  position: relative;
+}
+
+.plus_svg { 
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.a_button {
+  width: 125px;
+  height: 46px;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background: white;
+  text-align: center;
+  padding: 14px 0;
+  font-size: 12px;
+  font-weight: 600;
+}
