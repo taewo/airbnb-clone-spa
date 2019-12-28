@@ -1,22 +1,31 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const LookupCard = () => {
+const LookupCard = (props) => {
   return (
-    <StyledCard />
+    <StyledCard isLast={props.isLast} className="rounded-lg">
+      <img src={props.imageUrl} alt={props.text} className="rounded-t-lg" />
+      <StyledCardFont>
+        {props.text}
+      </StyledCardFont>
+    </StyledCard>
   )
 }
 
 const StyledCard = styled.div`
+  margin: 8px;
+  margin-right: ${props => props.isLast ? '20px' : ''};
   width: 130px;
-  height: 130px;
-  background-color: pink;
-  border: 1px solid yellow;
+  height: 150px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   display: inline-block;
 `
 
-const StyledCardImg = styled.img`
-  //TODO: 여기서 부터 작업하기
+const StyledCardFont = styled.div`
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(72, 72, 72);
+  padding: 16px;
 `
 
 export default LookupCard

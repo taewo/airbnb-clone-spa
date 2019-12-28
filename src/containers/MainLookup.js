@@ -4,6 +4,26 @@ import styled from 'styled-components';
 import { StyledTitle } from '../components/styles'
 
 const MainLookup = () => {
+  const datas = [
+    {
+      imageUrl: "https://a0.muscache.com/im/pictures/ef2b9de4-3b78-4c26-9d90-fa1789762ebc.jpg?aki_policy=large",
+      text: "숙소"
+    }, {
+      imageUrl: "https://a0.muscache.com/im/pictures/ef2b9de4-3b78-4c26-9d90-fa1789762ebc.jpg?aki_policy=large",
+      text: "체험"
+    }, {
+      imageUrl: "https://a0.muscache.com/im/pictures/ef2b9de4-3b78-4c26-9d90-fa1789762ebc.jpg?aki_policy=large",
+      text: "어드벤쳐"
+    }
+  ]
+
+  const LookupCards = datas.map((data, index) => {
+    const len = datas.length
+    return len === index + 1 ?
+      <LookupCard imageUrl={data.imageUrl} text={data.text} key={data.text} isLast={true} />
+      : <LookupCard imageUrl={data.imageUrl} text={data.text} key={data.text} />
+  })
+
   return (
     <div>
       <StyledTitle>
@@ -11,11 +31,7 @@ const MainLookup = () => {
       </StyledTitle>
       <StyledSliderOuter>
         <StyledSliderInner>
-          <LookupCard />
-          <LookupCard />
-          <LookupCard />
-          <LookupCard />
-          <LookupCard />
+          {LookupCards}
         </StyledSliderInner>
       </StyledSliderOuter>
     </div>
@@ -23,7 +39,6 @@ const MainLookup = () => {
 }
 
 const StyledSliderOuter = styled.div`
-  border: 1px solid red;
   width: 100%;
   height: 200px;
   overflow-x: scroll;

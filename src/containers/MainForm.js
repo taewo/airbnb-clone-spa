@@ -32,15 +32,15 @@ const MainForm = () => {
         title="목적지"
         handleInput={handleInput}
       />
-      <div class="flex mb-4">
-        <div class="w-1/2">
+      <div className="flex mb-4">
+        <div className="w-1/2">
           <SelectBox
             className="rounded"
             title="어른"
             data={selectTagOptions('성인', 1, 15)}
           />
         </div>
-        <div class="w-1/2">
+        <div className="w-1/2">
           <SelectBox
             className="rounded"
             title="어린이"
