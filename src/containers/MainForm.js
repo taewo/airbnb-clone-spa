@@ -51,6 +51,7 @@ const MainForm = () => {
       <Button
         className="bg-red-500 rounded w-full"
         handleClick={handleClick}
+        color="white"
       >검색
       </Button>
 

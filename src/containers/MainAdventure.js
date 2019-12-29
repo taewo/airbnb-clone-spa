@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyledTitle, StyledSubTitle, StyledMainContentWrapper } from '../components/styles'
 import LongContentCard from '../components/LongContentCard'
+import Button from '../components/Button'
 
 const MainAdventure = () => {
   const datas = [
@@ -38,6 +39,7 @@ const MainAdventure = () => {
   const LongContentCards = datas.map((data) => {
     return (
       <LongContentCard
+        key={data.desc}
         nation={data.nation}
         desc={data.desc}
         price={data.price}
@@ -59,6 +61,13 @@ const MainAdventure = () => {
       <div className="flex flex-wrap mb-4">
         {LongContentCards}
       </div>
+      <Button
+        color="rgb(0, 132, 137)"
+        border="1px solid rgb(0, 132, 137)"
+        className="rounded w-full"
+      >
+        어드벤처 모두 보기
+      </Button>
     </StyledMainContentWrapper>
   )
 }
