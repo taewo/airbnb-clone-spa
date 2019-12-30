@@ -1,10 +1,11 @@
 import React from 'react'
+import { StyledContentCardWrapper } from '../components/styles'
 import '../styles/LongContentCard.css'
 
 const LongContentCard = (props) => {
   return (
     <div className="w-1/2">
-      <div className="longcontentcard_wrap">
+      <StyledContentCardWrapper>
         <div className="longcontentcard_img_wrap rounded-lg">
           <img src={props.imageUrl} alt={props.nation} />
         </div>
@@ -20,7 +21,7 @@ const LongContentCard = (props) => {
         <div className="longcontentcard_subtitle">
           ★ {props.stats} ({props.reviews})
         </div>
-      </div>
+      </StyledContentCardWrapper>
     </div>
   )
 }

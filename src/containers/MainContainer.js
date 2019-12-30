@@ -4,6 +4,7 @@ import MainForm from '../containers/MainForm'
 import MainLookup from './MainLookup'
 import MainPlusLodgment from './MainPlusLodgment'
 import MainAdventure from './MainAdventure'
+import MainWorldLodgment from './MainWorldLodgment'
 import styled from 'styled-components'
 
 const MainContainer = () => {
@@ -18,6 +19,7 @@ const MainContainer = () => {
         <MainLookup />
         <MainPlusLodgment />
         <MainAdventure />
+        <MainWorldLodgment />
         <br></br>
         <br></br>
         <br></br>

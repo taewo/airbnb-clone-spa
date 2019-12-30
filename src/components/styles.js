@@ -23,3 +23,8 @@ export const StyledSubTitle = styled.div`
 export const StyledMainContentWrapper = styled.div`
   margin: 40px 0 50px 0;
 `
+
+export const StyledContentCardWrapper = styled.div`
+  padding: 3px;
+  margin-bottom: 15px;
+`
