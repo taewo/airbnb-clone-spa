@@ -26,7 +26,7 @@ const MainForm = () => {
   }
 
   return (
-    <div>
+    <div className="main-form">
       <TextInput
         placeholder="모든 위치"
         title="목적지"
@@ -54,7 +54,6 @@ const MainForm = () => {
         color="white"
       >검색
       </Button>
-
     </div>
   )
 }

@@ -5,11 +5,11 @@ import { StyledInputTitle } from './styles'
 
 const SelectBox = (props) => {
   const selectBoxClass = classNames(props.className)
-  const options = props.data.map((val, index) => {
+  const options = props.data? props.data.map((val, index) => {
     return (
       <option value={val.value} key={val.value}>{val.txt}</option>
     )
-  })
+  }) : ''
   return (
     <div style={{marginBottom: "16px"}}>
       <StyledInputTitle>
