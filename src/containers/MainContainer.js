@@ -14,8 +14,6 @@ const MainContainer = () => {
       <MainHeader />
       <StyledMainWrapper>
         <MainForm />
-        <br></br>
-        <br></br>
         <MainLookup />
         <MainPlusLodgment />
         <MainAdventure />
@@ -48,6 +46,10 @@ const MainContainer = () => {
 
 const StyledMainWrapper = styled.div`
   padding: 24px;
+
+  @media screen and (min-width: 766px) {
+    padding: 40px 80px;
+  }
 `
 
 export default MainContainer
