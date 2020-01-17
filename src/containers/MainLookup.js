@@ -2,6 +2,7 @@ import React from 'react'
 import LookupCard from '../components/LookupCard'
 import styled from 'styled-components';
 import { StyledTitle } from '../components/styles'
+import '../styles/MainLookup.css'
 
 const MainLookup = () => {
   const datas = [
@@ -25,11 +26,11 @@ const MainLookup = () => {
   })
 
   return (
-    <div>
+    <div className="main-lookup">
       <StyledTitle>
         에어비앤비 둘러보기
       </StyledTitle>
-      <div style={{height:'200px',marginTop:'15px'}}>
+      <div className="main-lookup__slider-wrap">
         <StyledSliderOuter>
           <StyledSliderInner>
             {LookupCards}
@@ -48,11 +49,23 @@ const StyledSliderOuter = styled.div`
   position: absolute;
   left: 0;
   padding-left: 20px;
+  border: 1px solid blue;
+  @media screen and (min-width: 744px) {
+    padding-left: 80px;
+    padding-right: 80px;
+    height: 100%;
+  }
 `
 
 const StyledSliderInner = styled.div`
   height: 100%;
   white-space: nowrap;
+  @media screen and (min-width: 744px) {
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    ${'' /* height: 100%; */}
+  }
 `
 
 export default MainLookup

@@ -15,7 +15,7 @@ const LookupCard = (props) => {
 const StyledCard = styled.div`
   margin: 8px;
   margin-right: ${props => props.isLast ? '24px' : ''};
-  width: 130px;
+  width: 100%;
   height: 150px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   display: inline-block;
