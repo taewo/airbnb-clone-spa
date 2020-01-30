@@ -1,0 +1,28 @@
+.test {
+  border: 1px solid red;
+  height: 100px;
+}
+
+.test .list {
+  /* overflow: auto; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.test .box {
+  border: 1px solid blue;
+  height: 90px;
+  width: 90px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 700px) {
+  .test {
+    border: 12px solid green;
+  }
+
+  .test .box {
+    width: 150px;
+  }
+}
