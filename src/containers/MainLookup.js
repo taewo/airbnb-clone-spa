@@ -24,21 +24,34 @@ const MainLookup = () => {
       <LookupCard imageUrl={data.imageUrl} text={data.text} key={data.text} isLast={true} />
       : <LookupCard imageUrl={data.imageUrl} text={data.text} key={data.text} />
   })
-
+  // 이전 코드
+  // return (
+  //   <div className="main-lookup">
+  //     <StyledTitle>
+  //       에어비앤비 둘러보기
+  //     </StyledTitle>
+  //     <div className="main-lookup__slider-wrap">
+  //       <StyledSliderOuter>
+  //         <StyledSliderInner>
+  //           {LookupCards}
+  //         </StyledSliderInner>
+  //       </StyledSliderOuter>
+  //     </div>
+  //   </div>
+  // )
   return (
     <div className="main-lookup">
       <StyledTitle>
         에어비앤비 둘러보기
       </StyledTitle>
-      <div className="main-lookup__slider-wrap">
-        <StyledSliderOuter>
-          <StyledSliderInner>
-            {LookupCards}
-          </StyledSliderInner>
-        </StyledSliderOuter>
+      <div>
+        <h1>
+          hello
+        </h1>
       </div>
     </div>
   )
+
 }
 
 const StyledSliderOuter = styled.div`
