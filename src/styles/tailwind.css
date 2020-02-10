@@ -11375,6 +11375,10 @@ video {
   z-index: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @media (min-width: 744px) {
   .md\:sr-only {
     position: absolute;
